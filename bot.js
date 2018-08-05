@@ -94,6 +94,6 @@ return;
     } else {
       message.guild.member(user).removeRole(muteRole).then(() => {
         client.channels.get(modlog.id).send({embed});
-      });})
+      })
 
 client.login(process.env.BOT_TOKEN);
